@@ -15,7 +15,7 @@ print
 print "\033[;1m" + "\033[1;36m" + "Usage: ruby.py https://www.site.com/ wordlist.txt " + '\033[0;0m'
 print
 
-if len(sys.argv) > 2:
+if len(sys.argv) >= 2:
     word = sys.argv[2]
     arq = open(word , 'r')
     lista = arq.readlines()
